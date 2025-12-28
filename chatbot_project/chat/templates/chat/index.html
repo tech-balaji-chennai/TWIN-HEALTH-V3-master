@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Health AI Assistant</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div id="chat-container">
+        <header>
+            <img src="{% static 'images/Twin Health - Official Logo.png' %}" alt="Twin Health Logo" id="logo">
+            <h1>Twin Health AI Assistant</h1>
+            <p>Enter your health-related questions regarding Twin Health.</p>
+        </header>
+
+        <div id="chat-box">
+        </div>
+
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+
+        <div id="status-area">
+            <p><strong>Last Classification:</strong> <span id="last-topic">N/A</span></p>
+            <p><strong>Last Status:</strong> <span id="last-status">N/A</span></p>
+        </div>
+    </div>
+
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>

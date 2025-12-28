@@ -1,0 +1,18 @@
+django>=4.0
+python-dotenv
+
+# If using OpenAI
+openai
+
+# If using Gemini
+#langchain-google-genai
+google-genai
+
+# If using other LLM client
+#
+
+# Core LangChain package highly recommended for RAG and classification logic
+#langchain
+
+# For structured output and data validation (useful with LLMs)
+pydantic
